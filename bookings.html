@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <script src="https://use.fontawesome.com/759a120d3c.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Vibes&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="styles.scss" rel="stylesheet" />
+    <title>A to Z Experiences</title>
+  </head>
+  <body>
+    <div class="container">
+      <br />
+      <hr />
+      <header>
+        <div class="logo-div">
+          <img src="atozlogo.jpg" height="150" width="400" />
+        </div>
+        <br />
+        <div id="nav-fx">
+          <nav class="btn btn-4">
+            <br />
+            <a href="#"
+              ><i class="fa fa-calendar-check-o" aria-hidden="true">Dates</i>
+            </a>
+            <a href="#"
+              ><i class="fa fa-map-marker" aria-hidden="true">Locations</i>
+            </a>
+            <a href="#"><i class="fa fa-usd" aria-hidden="true">Pricing</i> </a>
+            <a href="#">
+              <i class="fa fa-user-circle-o" aria-hidden="true">Bookings</i>
+            </a>
+            <a href="#"
+              ><i class="fa fa-heart-o" aria-hidden="true">Favorites</i>
+            </a>
+            <a href="#"
+              ><i class="fa fa-question-circle" aria-hidden="true">Help</i>
+            </a>
+          </nav>
+        </div>
+      </header>
+
+      <div>
+        <p>Give your experience a name!</p>
+        <input
+          name="event_name"
+          type="text"
+          placeholder="Weekend at Bernie's?"
+          value=""
+        />
+      </div>
+      <div>
+        <p>Where is this taking place?</p>
+        <input
+          name="location"
+          type="text"
+          placeholder="Location"
+          value="[object Object]"
+        />
+      </div>
+      <div>
+        <p>Which date works best?</p>
+        <input name="date_time" type="date" value="" />
+      </div>
+      <div>
+        <p>Set the price: (max is $2500.00)</p>
+        <input name="cost" type="number" min="0" max="2500" value="0" />
+      </div>
+      <div>
+        <p>Pick a category your experience best falls into:</p>
+        <select name="category"
+          ><option value="dining">Dining</option
+          ><option value="exercise">Exercise</option
+          ><option value="outdoors">Outdoors</option
+          ><option value="party">Party</option
+          ><option value="movie">Movie Night</option></select
+        >
+      </div>
+      <button>Submit</button>
+
+      <hr />
+    </div>
+  </body>
+</html>

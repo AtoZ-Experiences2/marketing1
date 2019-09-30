@@ -1,0 +1,128 @@
+// Variables//
+
+$silkblue =  #5dbcd2;
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 610px;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: white;
+  color: black;
+  width: 600px;
+}
+
+.flip-card-back {
+  background-color: white;
+  color: aqua;
+  transform: rotateY(180deg);
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+
+  width: 600px;
+}
+
+header nav a {
+  width: 500px;
+  font: black;
+}
+
+@media (max-width: 500px) {
+  .btn {
+    display: none;
+  }
+  .logo-div {
+    margin: 0 auto;
+  }
+}
+
+#nav-fx {
+  margin-top: 25px;
+  margin-left: 15px;
+}
+
+#nav-fx a:hover {
+  color: #e74c3c;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 20px;
+}
+
+.container {
+  width: 700px;
+  /*======= create a width property. Set the value to 600px */
+  margin: 0 auto;
+  padding: 40px;
+  border-style: outset;
+  border-width: 5px;
+  border-color: black;
+  border-radius: 5px;
+  position: static;
+}
+
+hr {
+  border: 3px black dashed;
+  width: 600px;
+}
+
+h2 {
+  font-family: "Vibes", cursive;
+  font-size: 40px;
+  color: $silkblue;
+  -webkit-text-stroke: 0.5px black;
+}
+
+#sign-up {
+  text-align: center;
+}
+
+button {
+  background-color: #5dbcd2;
+  color: white;
+  font-size: 25px;
+}
+
+form{
+  background-color: E0FFFF ;
+  border: 5px solid black;
+  text-align: center;
+  margin: 0 auto;
+  width: 400px;
+}
+.sign-up.form {
+  background-color: blue;
+  border: 5px solid black;
+  text-align: center;
+  margin: 0 auto;
+}
